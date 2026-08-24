@@ -8,6 +8,8 @@ statements throughout.
 This is a separate, standalone project - not part of the [Iris Security
 Lab](../security-labs) project, which runs on PHP 8.2.
 
+Also on GitHub: **https://github.com/jidemifilani/php5-secure-suite**
+
 ## Modules
 
 | # | Module | Where |
