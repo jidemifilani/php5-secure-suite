@@ -1,0 +1,6 @@
+# Runtime-generated secret material and user content - never committed.
+/storage/keys/*.bin
+/storage/uploads/*
+!/storage/uploads/.gitkeep
+/storage/logs/*
+!/storage/logs/.gitkeep

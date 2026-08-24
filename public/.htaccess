@@ -1,0 +1,17 @@
+RewriteEngine On
+
+# Only relevant if this is ever served through Apache with DocumentRoot
+# pointed at this public/ folder (the primary way to run this project is
+# PHP 5.6's own built-in server + router.php, per README.md). app/,
+# storage/ and database/ are siblings of public/, outside any Apache
+# DocumentRoot pointed here, so they need no deny rules - they are
+# physically unreachable, not just blocked by config.
+
+# Serve real files/directories as-is (css, js, etc.)
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Clean URLs: /login -> login.php, if login.php exists. Old .php URLs still work directly.
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*?)/?$ $1.php [L]

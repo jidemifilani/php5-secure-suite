@@ -1,0 +1,9 @@
+# PHP5 Secure Suite - educational project, not a production service.
+# This is a demo/teaching site, not a real service with a security team -
+# there is no real vulnerability inbox behind this file. It exists so the
+# format itself (RFC 9116) is part of the demo, alongside the in-app
+# disclosure page.
+Contact: http://localhost:8050/security-disclosure
+Preferred-Languages: en
+Canonical: http://localhost:8050/.well-known/security.txt
+Expires: 2027-08-24T00:00:00.000Z
